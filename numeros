@@ -1,0 +1,27 @@
+package projeto;
+
+import java.util.ArrayList;
+
+public class numeros {
+	private int numeros;
+	private int valor;
+	
+	
+	public numeros(int valor) {
+		super();
+		this.valor = valor;
+	}
+
+	public int getNumeros() {
+		return numeros;
+	}
+
+	public void setNumeros(int numeros) {
+		this.numeros = numeros;
+	}
+	
+		
+	
+	
+
+}
