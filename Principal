@@ -1,0 +1,32 @@
+package projeto;
+
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner ler = new Scanner(System.in);
+		LerArquivo l = new LerArquivo();
+		int opcao;
+		
+		while(true) {
+		System.out.println("1- Gerar Arquivo com numeros aleatorios\n");
+		System.out.println("2- Ler Arquivo com numero aleatorio e organizar do maior para o menor\n");
+		
+		opcao = ler.nextInt();
+		if(opcao == 1) {
+		System.out.println("Insira o numero limite do numero a ser gerado\n");
+		int lim = ler.nextInt();
+		System.out.println("Insira a quantidade de numeros a ser gerado\n");
+		int quant = ler.nextInt();
+		l.CriarArquivo(lim, quant);
+		}
+		
+		if(opcao == 2) {
+			l.lerLista();
+		}
+		
+		}
+	}
+}
